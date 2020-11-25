@@ -19,12 +19,7 @@ int main() {
 	int initted = IMG_Init(flags);
 	SDL_Surface* surface = IMG_Load("src/goku.png");
 	SDL_Texture* texture = SDL_CreateTextureFromSurface(rend, surface);
-
-	SDL_Rect dest;
-	dest.x = 0;
-	dest.y = 0;
-	dest.w = surface->w;
-	dest.h = surface->h;
+	SDL_Rect dest = { 0, 0, surface->w, surface->h };
 
 	SDL_FreeSurface(surface);
 	SDL_RenderSetScale(rend, scale, scale);
