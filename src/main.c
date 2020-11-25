@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-const int scale = 4;
+const int scale = 1;
 const int width = 64 * scale;
 const int height = 64 * scale;
 
